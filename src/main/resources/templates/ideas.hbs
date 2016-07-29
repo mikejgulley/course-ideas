@@ -3,7 +3,11 @@
 
     <ul>
         {{#each ideas}}
-            <li>{{ title }}</li> <!-- writing title here calls the getTitle() method b/c of Handlebars implementation -->
+            <li>
+                <form action="/ideas/{{ slug }}/vote" method="post">
+                    <a href="/ideas/{{ slug }}">{{ title }}</a> ({{ voteCount }} votes) <button>Vote</button><!-- title and voteCount here calls the getTitle() and getVoteCount() methods -->
+                </form>
+            </li>
         {{/each}}
     </ul>
 

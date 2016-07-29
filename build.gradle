@@ -13,6 +13,8 @@ dependencies {
     compile "com.sparkjava:spark-core:2.5" //add to build.gradle
     // https://mvnrepository.com/artifact/com.sparkjava/spark-template-handlebars
     compile group: 'com.sparkjava', name: 'spark-template-handlebars', version: '2.3'
+    // https://mvnrepository.com/artifact/com.github.slugify/slugify
+    compile group: 'com.github.slugify', name: 'slugify', version: '2.1.5'
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
